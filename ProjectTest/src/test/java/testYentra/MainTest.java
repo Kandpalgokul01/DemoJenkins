@@ -41,9 +41,5 @@ public class MainTest {
 		Thread.sleep(3000);
 		driver.findElement(By.id("username")).sendKeys("heelo");
 		
-		
-		
-	
-		
 	}
 }
