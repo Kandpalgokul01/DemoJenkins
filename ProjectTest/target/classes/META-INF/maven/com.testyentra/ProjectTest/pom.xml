@@ -68,9 +68,7 @@
 	<profiles>
 		<profile>
 			<id>regressionID</id>
-			 <activation>
-            <activeByDefault>true</activeByDefault>
-        </activation>
+			 
 			<build>
 				<plugins>
 					<plugin>
