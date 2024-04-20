@@ -6,12 +6,30 @@ import org.testng.annotations.Test;
 
 public class SecondTest {
 
+	
 	@Test
 	public void funATest()
-	{
-		WebDriver driver= new ChromeDriver();
-		driver.get("https://www.facebook.com/");
-		System.out.println("faceBook is displayd");
+	{ 
+		WebDriver driver;
+		String browser=System.getProperty("browser");
+		String url=System.getProperty("url");
+		if(browser.equals("chrome")) {
+			driver= new ChromeDriver();
+			driver.get(url);
+			System.out.println(driver.getTitle());
+			System.out.println("faceBook is chrome");
+		}else if(browser.equals("edge")){
+			driver= new ChromeDriver();
+			driver.get(url);
+			System.out.println(driver.getTitle());
+			System.out.println("faceBook is edge");
+		}else {
+			driver= new ChromeDriver();
+			driver.get(url);
+			System.out.println(driver.getTitle());
+			System.out.println("faceBook is firefox");
+		}
+		
 		
 	}
 	@Test

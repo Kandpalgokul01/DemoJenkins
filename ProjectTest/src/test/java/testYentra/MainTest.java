@@ -19,7 +19,7 @@ public class MainTest {
 	@Test
 	public void secondTest() throws InterruptedException {
 		
-		//String browser=System.getProperty("browser");
+		
 		
 		WebDriver driver = new ChromeDriver();
 
