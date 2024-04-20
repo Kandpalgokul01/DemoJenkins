@@ -2,6 +2,8 @@ package testYentra;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 public class SecondTest {
@@ -17,17 +19,17 @@ public class SecondTest {
 			driver= new ChromeDriver();
 			driver.get(url);
 			System.out.println(driver.getTitle());
-			System.out.println("faceBook is chrome");
+		
 		}else if(browser.equals("edge")){
-			driver= new ChromeDriver();
+			driver= new EdgeDriver();
 			driver.get(url);
 			System.out.println(driver.getTitle());
-			System.out.println("faceBook is edge");
+			
 		}else {
-			driver= new ChromeDriver();
+			driver= new FirefoxDriver();
 			driver.get(url);
 			System.out.println(driver.getTitle());
-			System.out.println("faceBook is firefox");
+		
 		}
 		
 		
